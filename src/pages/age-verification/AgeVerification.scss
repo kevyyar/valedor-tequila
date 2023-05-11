@@ -1,0 +1,159 @@
+/* AgeVerification.css */
+.age-verification-container {
+  height: 100vh;
+  background-image: url("./agave-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.age-verification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.age-verification-modal {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  // background-color: white;
+  border-radius: 10px;
+  // overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 550px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.age-verification-info {
+  display: flex;
+  justify-content: center;
+}
+
+.age-verification-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 250px;
+  h2 {
+    font-size: 1rem;
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.age-verification-right {
+  background-image: url("./logo.png");
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.age-verification-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 0.8rem;
+  width: 100%;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.age-verification-info {
+  padding-top: 40px;
+}
+
+.age-verification-logo {
+  height: 200px;
+  width: 200px;
+}
+
+.age-verification-button {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+// .react-datepicker {
+//   font-size: 14px;
+// }
+
+// .react-datepicker__header {
+//   background-color: #000;
+//   color: white;
+// }
+
+// .react-datepicker__current-month {
+//   font-weight: bold;
+//   color: #fff;
+// }
+
+// .react-datepicker__day-name {
+//   font-weight: bold;
+//   color: #ccc;
+// }
+
+// .react-datepicker__day {
+//   color: #333;
+// }
+
+// .react-datepicker__day:hover {
+//   background-color: #f0f0f0;
+// }
+
+// .react-datepicker__day--selected,
+// .react-datepicker__day--selected:hover {
+//   background-color: #000;
+//   color: white;
+// }
+
+// .react-datepicker__input-container input {
+//   height: 25px;
+//   border-radius: 5px;
+//   outline: none;
+//   border: 1.5px solid;
+//   padding: 10px 5px;
+//   background: none;
+// }
+
+// .react-datepicker__input-container input::placeholder {
+//   text-align: center;
+//   font-size: 0.7rem;
+//   color: #fff;
+// }
