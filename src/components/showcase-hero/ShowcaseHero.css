@@ -1,8 +1,0 @@
-/* Showcase.css */
-.showcase {
-  height: 100vh; /* Adjust this value as per your desired section height */
-  background-image: url("./frenchbg.png"); /* Replace with your image URL */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}

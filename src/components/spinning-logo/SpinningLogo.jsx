@@ -13,7 +13,7 @@ function SpinningLogo() {
               {letters.map((char, i) => (
                 <span
                   key={i}
-                  style={{ transform: `rotate(${i * 15.5}deg)` }}
+                  style={{ transform: `rotate(${i * 18}deg)` }}
                 >
                   {char}
                 </span>

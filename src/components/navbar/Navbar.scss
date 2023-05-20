@@ -1,0 +1,76 @@
+/* Navbar.css */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F7F3;
+  transition: padding 0.3s, background-color 0.3s;
+  z-index: 1000;
+  .navbar-container {
+    padding: 15px;
+    .logo-container {
+      transition: transform 0.3s;
+    }
+    .logo-container-scroll {
+      transform: scale(0.75);
+    }
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        color: var(--500);
+        cursor: pointer;
+        // font-family: "Light", sans-serif;
+        font-size: 25px;
+        letter-spacing: 1.2px;
+      }
+      .circle {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          background: url("./valedor-logo-original.svg");
+          background-size: cover;
+          border-radius: 50%;
+          filter: brightness(1.5) contrast(1.5);
+        }
+      }
+    }
+  }
+}
+
+.navbar-scroll {
+  @extend .navbar;
+  padding-top: 10px;
+  // background-color: #272727;
+  background-color: var(--800);
+  .navbar-container {
+    .navbar-links {
+      li {
+        color: #F9F7F3;
+      }
+      .circle {
+        .logo {
+          background: url("./valedor-logo-white.svg");
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

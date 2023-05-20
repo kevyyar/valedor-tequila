@@ -1,0 +1,34 @@
+.authentic-container {
+  height: 500px;
+  position: relative;
+  &::before {
+    content: "";
+    // background-color: #272727;
+    background-color: var(--800);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+      url("../../assets/valedor-logo-original.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .authentic-info {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    h3 {
+        color: #fff;
+        font-size: 60px;
+    }
+  }
+}
