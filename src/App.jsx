@@ -32,9 +32,6 @@ const App = () => {
             <section id="gallery">
               <Gallery />
             </section>
-            <section id="contact">
-              <h1>CONTACT</h1>
-            </section>
           </main>
         </>
       ) : (

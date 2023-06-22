@@ -1,21 +1,22 @@
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .about-info {
-        width: 40%;
-        padding: 0 30px;
-        h1 {
-            text-align: center;
-            font-size: 54px;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 1.5;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  .about-info {
+    width: 40%;
+    padding: 0 30px;
+    h1 {
+      text-align: center;
+      font-size: 54px;
+      margin-bottom: 30px;
     }
-    .about-slider {
-        width: 60%;
+    p {
+      font-size: 20px;
+      line-height: 1.5;
     }
+  }
+  .about-slider {
+    width: 60%;
+  }
 }

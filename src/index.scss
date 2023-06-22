@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 
-/* @font-face {
+@font-face {
   font-family: "Light";
   src: local("SainteColombeLight"),
     url("./assets/fonts/SainteColombeLight.otf") format("opentype");
@@ -22,7 +22,7 @@
   font-family: "Bold";
   src: local("SainteColombe"),
     url("./assets/fonts/SainteColombeMedium.otf") format("opentype");
-} */
+}
 :root {
   --50: #f4f5f7;
   --100: #e8ecef;
@@ -55,12 +55,11 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Regular", serif; */
+  font-family: "Bold", serif;
 }
 
 p {
-  font-family: "PT Serif", serif; 
-  /* font-family: 'Regular', serif; */
+  font-family: "Regular", serif;
 }
 
 img {

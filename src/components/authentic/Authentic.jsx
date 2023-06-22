@@ -5,7 +5,7 @@ const Authentic = () => {
       <div className="authentic-container">
         <div className="authentic-info">
           <h3>
-            Authenticity is not just a trend, it's our heritage and philosophy
+            La autenticidad no es solo una tendencia, es nuestra herencia y filosofía.
           </h3>
         </div>
       </div>

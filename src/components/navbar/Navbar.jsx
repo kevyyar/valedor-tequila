@@ -2,12 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.scss";
-import "../spinning-logo/SpinningLogo.css";
+// import "../spinning-logo/SpinningLogo.scss";
+import { CgMenuLeftAlt } from "react-icons/cg";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
-  const text = "Welcome To The New Era";
-  const letters = text.split("");
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
@@ -24,33 +23,16 @@ const Navbar = () => {
     };
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    const sectionElement = document.getElementById(sectionId);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <nav className={scrolling ? "navbar navbar-scroll" : "navbar"}>
       <div className="navbar-container">
-        <div className={scrolling ? "logo-container logo-container-scroll" : "logo-container"}>
-          {/* <div className="circle">
-            <div className="logo"></div>
-            <div className="text">
-              <p>
-                {letters.map((char, i) => (
-                  <span
-                    key={i}
-                    style={{ transform: `rotate(${i * 15.5}deg)` }}
-                  >
-                    {char}
-                  </span>
-                ))}
-              </p>
-            </div>
-          </div> */}
-        </div>
+        <div
+          className={
+            scrolling
+              ? "logo-container logo-container-scroll"
+              : "logo-container"
+          }
+        ></div>
         <ul className="navbar-links">
           <li>
             <Link
@@ -61,7 +43,7 @@ const Navbar = () => {
               duration={500}
               offset={-145}
             >
-              Home
+              Inicio
             </Link>
           </li>
           <li>
@@ -73,24 +55,20 @@ const Navbar = () => {
               duration={500}
               offset={-160}
             >
-              About
+              Quienes Somos
             </Link>
           </li>
-          <div className="circle">
+          <Link
+            className="circle"
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-130}
+          >
             <div className="logo"></div>
-            {/* <div className="text">
-              <p>
-                {letters.map((char, i) => (
-                  <span
-                    key={i}
-                    style={{ transform: `rotate(${i * 15.5}deg)` }}
-                  >
-                    {char}
-                  </span>
-                ))}
-              </p>
-            </div> */}
-          </div>
+          </Link>
           <li>
             <Link
               activeClass="active"
@@ -100,7 +78,7 @@ const Navbar = () => {
               duration={500}
               offset={-130}
             >
-              Gallery
+              Galeria
             </Link>
           </li>
           <li>
@@ -112,7 +90,7 @@ const Navbar = () => {
               duration={500}
               offset={-130}
             >
-              Contact
+              Contacto
             </Link>
           </li>
         </ul>

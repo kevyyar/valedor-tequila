@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import images from "../../assets/images";
+import { sliderImages } from "../../assets/images";
 import "./ImageSlider.scss";
 
 const ImageSlider = () => {
@@ -24,7 +24,7 @@ const ImageSlider = () => {
         }}
         className="innerImageSlider"
       >
-        {images.map((image, index) => (
+        {sliderImages.map((image, index) => (
           <motion.div key={index} className="item">
             <img src={image} alt="image" />
           </motion.div>

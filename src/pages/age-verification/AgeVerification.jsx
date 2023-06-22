@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LoadingSpinner from "../../components/loading-spinner/LoadingSpinner";
+import SpinningLogo from "../../components/spinning-logo/SpinningLogo";
 import "./AgeVerification.scss";
 
 const AgeVerification = ({ onAgeVerified }) => {
@@ -22,7 +23,7 @@ const AgeVerification = ({ onAgeVerified }) => {
       setShowModal(false);
       setLoading(false);
       onAgeVerified();
-    }, 5000);
+    }, 2000);
   };
 
   const handleNo = () => {
@@ -33,10 +34,23 @@ const AgeVerification = ({ onAgeVerified }) => {
     <>
       {loading ? (
         <div className="loading-container">
-          <LoadingSpinner />
+          {/* <LoadingSpinner /> */}
+          <SpinningLogo />
         </div>
       ) : (
         <div className="age-verification-container">
+          <div>
+            <div className="overlay"></div>
+            <video
+              autoPlay="autoplay"
+              loop="loop"
+              muted
+              className="video-background"
+            >
+              <source src="/Agave 7.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           {showModal && (
             <div className="age-verification-overlay">
               <div className="age-verification-modal">

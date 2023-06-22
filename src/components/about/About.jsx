@@ -5,9 +5,9 @@ const About = () => {
   return (
       <div className="about-container">
         <div className="about-info">
-          <h1>Welcome to Paradise!</h1>
+          <h1>Esto es CASA VALEDOR</h1>
           <p>
-          We are proud to offer some of the best Tequila in the market, made from the finest agave plants in the heart of Mexico. Our Tequila is made with utmost care and expertise, ensuring that every bottle is matured to perfection before it reaches your hands. From farm to bottle, we track every step of the process, guaranteeing that our Tequila is of the highest quality.
+          Uno de nuestros principales objetivos es ser una empresa tequilera líder del mercado moderno para beneficiar a los consumidores de la mejor manera posible, degustando el exquisito sabor del mejor tequila cristalino. Somos creadores de una marca intuitiva y moderna que nuestro sabor se caracteriza por tener esas notas frutales y amaderadas perfectamente seleccionadas para el paladar.
           </p>
         </div>
         <div className="about-slider">
